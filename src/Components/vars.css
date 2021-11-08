@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Oswald:wght@300;400;500&display=swap');
+
+:root {
+  --fontOne: 'Abril Fatface', cursive;
+  --fontTwo: 'Oswald', sans-serif;
+  --fontThree: 'Open Sans', sans-serif;
+  --main: #529277;
+  --accent: #e28f92;
+  --white: #f0f7f4;
+  --text: #504746;
+  --mobileWidth: clamp(8rem, 88% + 1rem, 45rem);
+  /* Extra Extra Large: Title H1 in JumboTron */
+  --textXXL: clamp(2rem, 13vw, 6rem);
+  /* Extra Large: Section Headers */
+  --textXL: clamp(0.9rem, 6.8vw, 2.4rem);
+  /* Large: Title, JumboTron Sub-Title */
+  --textL: clamp(0.9rem, 5vw, 1.8rem);
+  /* Medium: JumboTron Button, Sight Card Titles*/
+  --textM: clamp(0.7rem, 4vw, 1.5rem);
+  /* Small: */
+  --textS: clamp(0.5rem, 3vw, 1.1rem);
+  /* Extra Small: */
+  --textXS: clamp(0.4rem, 2.5vw, 0.9rem);
+}

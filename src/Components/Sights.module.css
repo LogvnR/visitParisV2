@@ -1,0 +1,26 @@
+@import './vars.css';
+
+.Sights {
+  width: 100%;
+  height: 89vh;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    'Top'
+    'Middle'
+    'Bottom';
+  justify-items: center;
+  align-items: end;
+}
+
+.SightOne {
+  grid-area: Top;
+}
+
+.SightTwo {
+  grid-area: Middle;
+}
+
+.SightThree {
+  grid-area: Bottom;
+}

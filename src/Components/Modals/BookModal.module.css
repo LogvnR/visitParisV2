@@ -1,0 +1,119 @@
+@import '../vars.css';
+
+.modalContainer {
+  position: fixed;
+
+  top: 0;
+
+  bottom: 0;
+
+  left: 0;
+
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  z-index: 10;
+}
+
+.modal {
+  width: 17rem;
+
+  height: 12rem;
+
+  background-color: var(--main);
+
+  padding: 2rem;
+
+  border-radius: 20px;
+
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+
+  overflow: scroll;
+}
+
+.modal_header {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.modal_header h2 {
+  text-align: center;
+
+  width: 70%;
+
+  color: var(--white);
+
+  font-family: var(--fontTwo);
+  font-size: var(--textXXL);
+  text-transform: uppercase;
+
+  font-weight: 400;
+
+  margin: 0;
+
+  padding-bottom: 0.2rem;
+
+  border-bottom: 2px solid var(--accent);
+}
+
+.modal_content {
+  padding: 1rem 0;
+
+  color: white;
+
+  font-family: var(--fontThree);
+
+  text-align: center;
+
+  font-size: var(--textS);
+
+  letter-spacing: 0.8px;
+
+  line-height: 1.2rem;
+
+  font-weight: 400;
+
+  overflow: scroll;
+}
+
+.Footer {
+  padding: 0.8rem 0;
+
+  padding-bottom: 0;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.Footer button {
+  width: 5rem;
+
+  height: 1.6rem;
+
+  border: none;
+
+  background-color: var(--accent);
+
+  border-radius: 0.5rem;
+
+  color: white;
+  letter-spacing: 1px;
+  font-size: var(--textS);
+  text-transform: uppercase;
+  font-family: var(--fontThree);
+}

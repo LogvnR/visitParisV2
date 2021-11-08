@@ -1,0 +1,32 @@
+@import './vars.css';
+
+.NavBar {
+  width: 100%;
+  height: 7vh;
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'Left Center Right';
+}
+
+.MainTitle {
+  grid-area: Center;
+  justify-self: center;
+  align-self: center;
+  margin: 0;
+  font-weight: 400;
+  font-size: var(--textL);
+  color: var(--text);
+}
+
+.MainTitle span {
+  font-weight: 500;
+}
+
+.Hamburger {
+  grid-area: Right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0.3em;
+}

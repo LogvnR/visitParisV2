@@ -1,0 +1,109 @@
+@import './vars.css';
+
+.JumboTron {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.JumboTronCard {
+  width: var(--mobileWidth);
+  height: 93%;
+  background-image: url('../photos/3.jpg');
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 0.4fr;
+  grid-template-areas:
+    'Top'
+    'Middle'
+    'Bottom';
+}
+
+.TitleContainer {
+  grid-area: Middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.TitleContainer h1 {
+  margin: 0 0 0 5vw;
+  font-family: var(--fontOne);
+  color: var(--white);
+  font-size: var(--textXXL);
+  font-weight: 400;
+}
+
+.TitleContainer h1 span {
+  font-size: var(--textXXL);
+  color: var(--accent);
+}
+
+.TitleContainer hr {
+  width: 25vw;
+  margin: 2vh 0 2vh 5vw;
+  background-color: var(--white);
+  border-width: 0;
+  border-bottom: 2px solid var(--white);
+}
+
+.TitleContainer h3 {
+  width: 55%;
+  margin: 0 0 0 5vw;
+  color: var(--white);
+  font-family: var(--fontThree);
+  font-weight: 400;
+  font-size: var(--textL);
+  letter-spacing: 0.11vw;
+}
+
+.CtaContainer {
+  grid-area: Bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CtaContainer p {
+  color: var(--white);
+  font-family: var(--fontThree);
+  font-weight: 400;
+  font-size: var(--textM);
+}
+
+.CtaContainer button {
+  width: clamp(6.3rem, 35vw, 14rem);
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: var(--main);
+  border-radius: 0.5rem;
+}
+
+.ButtonContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  grid-template-areas: 'Left Right';
+  justify-items: center;
+  align-items: center;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.CtaContainer button p {
+  grid-area: Left;
+  justify-self: end;
+  margin: 0;
+  font-size: clamp(0.7rem, 3.8vw, 1.5rem);
+}
+
+.Arrow {
+  transform: translateY(1px);
+}

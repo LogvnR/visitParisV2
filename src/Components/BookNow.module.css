@@ -1,0 +1,81 @@
+@import './vars.css';
+
+.BookNow {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BookNowContainer {
+  width: var(--mobileWidth);
+  height: 56.5vh;
+  background-image: url('../photos/5.jpg');
+  background-size: cover;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-rows: 0.9fr 1fr 0.7fr;
+  grid-template-areas:
+    'Top'
+    'Middle'
+    'Bottom';
+}
+
+.TitleContainer {
+  grid-area: Top;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.TitleContainer h2 {
+  margin: 0 0 0 5vw;
+  font-family: var(--fontTwo);
+  font-weight: 400;
+  font-size: var(--textXXL);
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.DateContainer {
+  grid-area: Bottom;
+  justify-self: center;
+  align-self: end;
+  width: 90%;
+  height: 90%;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translateY(30px);
+}
+
+.DateContainer input {
+  width: 25vw;
+  height: 2.5vh;
+  border: 1px solid var(--text);
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--text);
+  font-family: var(--fontThree);
+  font-size: 2vw;
+  outline-color: var(--main);
+}
+
+.DateContainer button {
+  width: 15vw;
+  height: 2.8vh;
+  border: none;
+  background-color: var(--accent);
+  border-radius: 0.5rem;
+  color: var(--white);
+  font-family: var(--fontThree);
+  font-weight: 500;
+  font-size: var(--textXS);
+  letter-spacing: 0.025rem;
+  padding-bottom: 0.1rem;
+  text-transform: uppercase;
+}

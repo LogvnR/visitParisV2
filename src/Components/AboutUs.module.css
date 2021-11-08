@@ -1,0 +1,39 @@
+@import './vars.css';
+
+.AboutUs {
+  width: 100%;
+  height: 42vh;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutUsReveal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutUsText {
+  width: var(--mobileWidth);
+  height: 86%;
+  background-color: var(--main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutUsText p {
+  color: var(--white);
+  font-family: var(--fontThree);
+  font-size: var(--textS);
+  line-height: 3vh;
+  padding: 5vw;
+}
+
+.AboutUsText p span {
+  font-weight: 500;
+}
