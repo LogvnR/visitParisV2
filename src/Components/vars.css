@@ -8,7 +8,7 @@
   --accent: #e28f92;
   --white: #f0f7f4;
   --text: #504746;
-  --mobileWidth: clamp(8rem, 88% + 1rem, 45rem);
+  --mobileWidth: clamp(8rem, calc(88% + 1rem), 45rem);
   /* Extra Extra Large: Title H1 in JumboTron */
   --textXXL: clamp(2rem, 13vw, 7rem);
   /* Extra Large: Section Headers */
@@ -22,6 +22,6 @@
   /* Extra Small: */
   --textXS: clamp(0.4rem, 2.5vw, 0.9rem);
   /* ========== Desktop ========== */
-  --desktopWidthL: clamp(8rem, 84% + 1rem, 110rem);
+  --desktopWidthL: clamp(8rem, calc(84% + 1rem), 110rem);
   --desktopTextM: clamp(0.9rem, 2.2vw, 2.8rem);
 }
