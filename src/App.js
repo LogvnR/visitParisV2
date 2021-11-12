@@ -26,7 +26,7 @@ function App() {
         sightsClick={executeSightsScroll}
         bookClick={executeBookScroll}
       />
-      <JumboTron />
+      <JumboTron bookClick={executeBookScroll} />
       <ScrollReveal className={classes.About}>
         <h2 ref={aboutRef} className={classes.AboutTitle}>
           About Us

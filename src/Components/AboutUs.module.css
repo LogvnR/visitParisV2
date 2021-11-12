@@ -37,3 +37,13 @@
 .AboutUsText p span {
   font-weight: 500;
 }
+
+@media only screen and (min-width: 1024px) {
+  .AboutUsText {
+    width: clamp(8rem, 59% + 1rem, 75rem);
+  }
+
+  .AboutUsText p {
+    line-height: 4.2vh;
+  }
+}

@@ -36,8 +36,14 @@ const NavBar = (props) => {
       >
         visit<span>Paris</span>
       </h2>
+      <div className={classes.Menu}>
+        <div onClick={props.aboutClick}>About Us</div>
+        <div onClick={props.sightsClick}>See The Sights</div>
+        <div onClick={props.bookClick}>Book Now!</div>
+      </div>
       <div className={classes.Hamburger}>
         <Hamburger
+          className={classes.HamburgerIcon}
           toggled={modalOpen}
           onToggle={handleClickBtn}
           size={30}

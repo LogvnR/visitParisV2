@@ -23,10 +23,8 @@
 }
 
 .modal {
-  width: 17rem;
-
-  height: 12rem;
-
+  width: clamp(6rem, 76vw, 41rem);
+  height: clamp(10rem, 30vh, 22rem);
   background-color: var(--main);
 
   padding: 2rem;
@@ -116,4 +114,30 @@
   font-size: var(--textS);
   text-transform: uppercase;
   font-family: var(--fontThree);
+}
+
+@media only screen and (min-width: 1024px) {
+  .modal {
+    width: clamp(6rem, 45vw, 48rem);
+    height: clamp(10rem, 45vh, 25rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .modal_header h2 {
+    font-size: clamp(0.9rem, 3vw, 4rem);
+  }
+
+  .modal_content {
+    font-size: clamp(0.9rem, 1.3vw, 4rem);
+    line-height: 2.2rem;
+    width: 50%;
+    align-self: center;
+  }
+
+  .Footer button {
+    width: 7rem;
+    height: 2rem;
+  }
 }

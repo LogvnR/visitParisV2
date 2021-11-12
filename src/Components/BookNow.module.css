@@ -15,7 +15,7 @@
   background-size: cover;
   border-radius: 0.5rem;
   display: grid;
-  grid-template-rows: 0.9fr 1fr 0.7fr;
+  grid-template-rows: 0.9fr 0.7fr 0.7fr;
   grid-template-areas:
     'Top'
     'Middle'
@@ -78,4 +78,38 @@
   letter-spacing: 0.025rem;
   padding-bottom: 0.1rem;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1024px) {
+  .BookNow {
+    height: 90vh;
+  }
+
+  .BookNowContainer {
+    width: var(--desktopWidthL);
+    height: 89vh;
+    background-size: 100% 115%;
+  }
+
+  .TitleContainer h2 {
+    font-size: clamp(2rem, 5.6vw, 7rem);
+  }
+
+  .DateContainer {
+    width: 75%;
+    height: 50%;
+    transform: none;
+    margin-bottom: 2rem;
+  }
+
+  .DateContainer input {
+    width: 18.5vw;
+    height: 3.2vh;
+    font-size: 1vw;
+  }
+
+  .DateContainer button {
+    width: 8.2vw;
+    height: 3.55vh;
+  }
 }

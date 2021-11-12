@@ -7,7 +7,7 @@ import Card from './Cards/Card';
 import ScrollReveal from './Cards/ScrollReveal';
 import classes from './JumboTron.module.css';
 
-const JumboTron = () => {
+const JumboTron = (props) => {
   return (
     <ScrollReveal className={classes.JumboTron}>
       <Card className={classes.JumboTronCard}>
@@ -20,7 +20,7 @@ const JumboTron = () => {
         </div>
         <div className={classes.CtaContainer}>
           <p>Come Visit Us!</p>
-          <button>
+          <button onClick={props.bookClick}>
             <div className={classes.ButtonContainer}>
               <p>Book Now</p>
               <FontAwesomeIcon className={classes.Arrow} icon={faArrowRight} />

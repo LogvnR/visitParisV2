@@ -47,3 +47,18 @@
   margin: 0 0 0 5vw;
   font-size: 1.5vw;
 }
+
+@media only screen and (min-width: 1024px) {
+  .About {
+    margin-top: 5vh;
+  }
+
+  .Sights {
+    margin-top: 10vh;
+  }
+
+  .Watermark p {
+    margin: 0 0 1.5vh 7.1vw;
+    font-size: 1vw;
+  }
+}

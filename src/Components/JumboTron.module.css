@@ -101,9 +101,35 @@
   grid-area: Left;
   justify-self: end;
   margin: 0;
-  font-size: clamp(0.7rem, 3.8vw, 1.5rem);
+  font-size: clamp(0.7rem, 3.8vw, 1.3rem);
 }
 
 .Arrow {
   transform: translateY(1px);
+}
+
+@media only screen and (min-width: 1024px) {
+  .JumboTron {
+    height: 89vh;
+  }
+  .JumboTronCard {
+    width: var(--desktopWidthL);
+    background-image: url('../photos/1.jpg');
+    background-size: 100% 125%;
+  }
+
+  .CtaContainer button p {
+    font-size: clamp(0.7rem, 1.2vw, 1.3rem);
+    margin-right: 1vw;
+  }
+
+  .CtaContainer button:hover {
+    background-color: var(--white);
+    transition: all 0.25s;
+  }
+
+  .CtaContainer button:hover > .ButtonContainer,
+  .CtaContainer button:hover > .ButtonContainer p {
+    color: var(--main);
+  }
 }
