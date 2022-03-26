@@ -1,6 +1,4 @@
-@import './vars.css';
-
-.BookNow {
+.container {
   width: 100%;
   height: 70vh;
   display: flex;
@@ -8,7 +6,7 @@
   align-items: center;
 }
 
-.BookNowContainer {
+.book-now {
   width: var(--mobileWidth);
   height: 56.5vh;
   background-image: url('../photos/5.jpg');
@@ -22,7 +20,7 @@
     'Bottom';
 }
 
-.TitleContainer {
+.title-container {
   grid-area: Top;
   width: 100%;
   height: 100%;
@@ -30,7 +28,7 @@
   align-items: center;
 }
 
-.TitleContainer h2 {
+.title-container h2 {
   margin: 0 0 0 5vw;
   font-family: var(--fontTwo);
   font-weight: 400;
@@ -40,7 +38,7 @@
   letter-spacing: 0.1rem;
 }
 
-.DateContainer {
+.date-container {
   grid-area: Bottom;
   justify-self: center;
   align-self: end;
@@ -53,7 +51,7 @@
   transform: translateY(30px);
 }
 
-.DateContainer input {
+.date-container input {
   width: 25vw;
   height: 2.5vh;
   border: 1px solid var(--text);
@@ -65,7 +63,7 @@
   outline-color: var(--main);
 }
 
-.DateContainer button {
+.date-container button {
   width: 15vw;
   height: 2.8vh;
   border: none;
@@ -81,34 +79,34 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .BookNow {
+  .container {
     height: 90vh;
   }
 
-  .BookNowContainer {
+  .book-now {
     width: var(--desktopWidthL);
     height: 89vh;
     background-size: 100% 115%;
   }
 
-  .TitleContainer h2 {
+  .title-container h2 {
     font-size: clamp(2rem, 5.6vw, 7rem);
   }
 
-  .DateContainer {
+  .date-container {
     width: 75%;
     height: 50%;
     transform: none;
     margin-bottom: 2rem;
   }
 
-  .DateContainer input {
+  .date-container input {
     width: 18.5vw;
     height: 3.2vh;
     font-size: 1vw;
   }
 
-  .DateContainer button {
+  .date-container button {
     width: 8.2vw;
     height: 3.55vh;
   }

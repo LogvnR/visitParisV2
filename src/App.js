@@ -3,11 +3,11 @@ import ScrollReveal from './Components/Cards/ScrollReveal';
 import JumboTron from './Components/JumboTron';
 
 import classes from './App.module.css';
-import NavBar from './Components/NavBar';
 import AboutUs from './Components/AboutUs';
 import Sights from './Components/Sights';
 import BookNow from './Components/BookNow';
 import Footer from './Components/Footer';
+import Services from './Components/Services';
 
 function App() {
   const aboutRef = useRef(null);
@@ -21,27 +21,32 @@ function App() {
 
   return (
     <>
-      <NavBar
+      <JumboTron
         aboutClick={executeAboutScroll}
         sightsClick={executeSightsScroll}
         bookClick={executeBookScroll}
       />
-      <JumboTron bookClick={executeBookScroll} />
-      <ScrollReveal className={classes.About}>
-        <h2 ref={aboutRef} className={classes.AboutTitle}>
+      <ScrollReveal className={classes['text-container']}>
+        <h2 ref={aboutRef} className={classes.title}>
           About Us
         </h2>
       </ScrollReveal>
       <AboutUs />
-      <ScrollReveal className={classes.Sights}>
-        <h2 ref={sightsRef} className={classes.SightsTitle}>
+      <ScrollReveal className={classes['text-container']}>
+        <h2 ref={sightsRef} className={classes.title}>
           See The Sights
         </h2>
       </ScrollReveal>
       <Sights />
+      <ScrollReveal className={classes['text-container']}>
+        <h2 ref={sightsRef} className={classes.title}>
+          How We Help
+        </h2>
+      </ScrollReveal>
+      <Services />
       <BookNow refProp={bookRef} />
       <Footer />
-      <ScrollReveal className={classes.Watermark}>
+      <ScrollReveal className={classes.watermark}>
         <p>Website by Logan Ricard</p>
       </ScrollReveal>
     </>

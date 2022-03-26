@@ -1,6 +1,4 @@
-@import './vars.css';
-
-.AboutUs {
+.container {
   width: 100%;
   height: 42vh;
   margin-bottom: 1rem;
@@ -9,7 +7,7 @@
   align-items: center;
 }
 
-.AboutUsReveal {
+.reveal {
   width: 100%;
   height: 100%;
   display: flex;
@@ -17,7 +15,7 @@
   align-items: center;
 }
 
-.AboutUsText {
+.text {
   width: var(--mobileWidth);
   height: 86%;
   background-color: var(--main);
@@ -26,7 +24,7 @@
   align-items: center;
 }
 
-.AboutUsText p {
+.text p {
   color: var(--white);
   font-family: var(--fontThree);
   font-size: var(--textS);
@@ -34,16 +32,16 @@
   padding: 5vw;
 }
 
-.AboutUsText p span {
+.text p span {
   font-weight: 500;
 }
 
 @media only screen and (min-width: 1024px) {
-  .AboutUsText {
+  .text {
     width: clamp(8rem, 59% + 1rem, 75rem);
   }
 
-  .AboutUsText p {
+  .text p {
     line-height: 4.2vh;
   }
 }

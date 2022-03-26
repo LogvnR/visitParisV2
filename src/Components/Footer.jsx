@@ -9,34 +9,34 @@ import {
 
 import ScrollReveal from './Cards/ScrollReveal';
 
-import classes from './Footer.module.css';
+import classes from '../Styles/Footer.module.css';
 
 const Footer = () => {
   return (
-    <div className={classes.Footer}>
-      <ScrollReveal className={classes.FooterContainer}>
-        <h2 className={classes.MainTitle}>
+    <div className={classes.container}>
+      <ScrollReveal className={classes.footer}>
+        <h2 className={classes.title}>
           visit<span>Paris</span>
         </h2>
-        <div className={classes.SocialContainer}>
+        <div className={classes['social-container']}>
           <FontAwesomeIcon
             onClick={() => window.open('https://www.instagram.com/')}
-            className={classes.SocialIcon}
+            className={classes['social-icon']}
             icon={faInstagram}
           />
           <FontAwesomeIcon
             onClick={() => window.open('https://twitter.com/')}
-            className={classes.SocialIcon}
+            className={classes['social-icon']}
             icon={faTwitter}
           />
           <FontAwesomeIcon
             onClick={() => window.open('https://www.google.com/maps')}
-            className={classes.SocialIcon}
+            className={classes['social-icon']}
             icon={faGoogle}
           />
           <FontAwesomeIcon
             onClick={() => window.open('https://www.youtube.com/')}
-            className={classes.SocialIcon}
+            className={classes['social-icon']}
             icon={faYoutube}
           />
         </div>

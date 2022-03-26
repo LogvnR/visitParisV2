@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Twirl as Hamburger } from 'hamburger-react';
 
 import NavModal from './Modals/NavModal';
-import classes from './NavBar.module.css';
+import classes from '../Styles/NavBar.module.css';
 
 const NavBar = (props) => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -27,28 +27,27 @@ const NavBar = (props) => {
 
   return (
     <div
-      className={classes.NavBar}
-      style={{ backgroundColor: modalOpen ? '#529277' : '#f0f7f4' }}
+      className={classes.navbar}
+      style={{ backgroundColor: modalOpen ? '#529277' : 'transparent' }}
     >
       <h2
-        className={classes.MainTitle}
-        style={{ color: modalOpen ? '#f0f7f4' : '#504746' }}
+        className={classes.title}
+        // style={{ color: modalOpen ? '#f0f7f4' : '#504746' }}
       >
         visit<span>Paris</span>
       </h2>
-      <div className={classes.Menu}>
+      <div className={classes.menu}>
         <div onClick={props.aboutClick}>About Us</div>
         <div onClick={props.sightsClick}>See The Sights</div>
         <div onClick={props.bookClick}>Book Now!</div>
       </div>
-      <div className={classes.Hamburger}>
+      <div className={classes.hamburger}>
         <Hamburger
-          className={classes.HamburgerIcon}
           toggled={modalOpen}
           onToggle={handleClickBtn}
           size={30}
           rounded
-          color={modalOpen ? '#f0f7f4' : '#504746'}
+          color={'#f0f7f4'}
           hideOutline={true}
         />
 

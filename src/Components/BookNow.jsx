@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import classes from './BookNow.module.css';
+import classes from '../Styles/BookNow.module.css';
 import ScrollReveal from './Cards/ScrollReveal';
 import Card from './Cards/Card';
 import BookModal from './Modals/BookModal';
@@ -23,23 +23,23 @@ const BookNow = (props) => {
   };
 
   return (
-    <div ref={props.refProp} className={classes.BookNow}>
-      <ScrollReveal className={classes.BookNowContainer}>
-        <div className={classes.TitleContainer}>
+    <div ref={props.refProp} className={classes.container}>
+      <ScrollReveal className={classes['book-now']}>
+        <div className={classes['title-container']}>
           <h2>
             Book
             <br /> Your
             <br /> Trip
           </h2>
         </div>
-        <Card className={classes.DateContainer}>
+        <Card className={classes['date-container']}>
           <input
-            className={classes.FromInput}
+            className={classes['from-input']}
             type="date"
             placeholder="Start"
           />
-          <input className={classes.ToInput} type="date" />
-          <button className={classes.SubmitBtn} onClick={handleClickBtn}>
+          <input className={classes['to-input']} type="date" />
+          <button className={classes['submit-btn']} onClick={handleClickBtn}>
             Search
           </button>
         </Card>

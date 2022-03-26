@@ -1,14 +1,14 @@
 import React from 'react';
 
-import classes from './AboutUs.module.css';
+import classes from '../Styles/AboutUs.module.css';
 import Card from './Cards/Card';
 import ScrollReveal from './Cards/ScrollReveal';
 
 const AboutUs = () => {
   return (
-    <div className={classes.AboutUs}>
-      <ScrollReveal className={classes.AboutUsReveal}>
-        <Card className={classes.AboutUsText}>
+    <div className={classes.container}>
+      <ScrollReveal className={classes.reveal}>
+        <Card className={classes.text}>
           <p>
             Beyond the glitter of the Eiffel Tower and the allure of the Mona
             Lisa, there is the city of Paris itself. Its people, its cuisine,
