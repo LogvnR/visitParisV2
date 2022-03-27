@@ -16,6 +16,9 @@ function App() {
   const sightsRef = useRef(null);
   const executeSightsScroll = () => sightsRef.current.scrollIntoView();
 
+  const servicesRef = useRef(null);
+  const executeServicesScroll = () => servicesRef.current.scrollIntoView();
+
   const bookRef = useRef(null);
   const executeBookScroll = () => bookRef.current.scrollIntoView();
 
@@ -24,6 +27,7 @@ function App() {
       <JumboTron
         aboutClick={executeAboutScroll}
         sightsClick={executeSightsScroll}
+        servicesClick={executeServicesScroll}
         bookClick={executeBookScroll}
       />
       <ScrollReveal className={classes['text-container']}>
@@ -39,7 +43,7 @@ function App() {
       </ScrollReveal>
       <Sights />
       <ScrollReveal className={classes['text-container']}>
-        <h2 ref={sightsRef} className={classes.title}>
+        <h2 ref={servicesRef} className={classes.title}>
           How We Help
         </h2>
       </ScrollReveal>

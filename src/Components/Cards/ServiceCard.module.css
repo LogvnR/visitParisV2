@@ -16,6 +16,8 @@
   justify-content: center;
   align-items: center;
   font-size: var(--textXL);
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
 
 .icon {
@@ -27,7 +29,7 @@
   content: ' ';
   height: 5vh;
   max-height: 60px;
-  border-right: 2px solid black;
+  border-right: 2px solid var(--text);
 }
 
 .title {
@@ -35,4 +37,5 @@
   font-size: var(--textL);
   font-family: var(--fontTwo);
   font-weight: 500;
+  color: var(--black);
 }

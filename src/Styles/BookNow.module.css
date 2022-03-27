@@ -9,7 +9,7 @@
 .book-now {
   width: var(--mobileWidth);
   height: 56.5vh;
-  background-image: url('../photos/5.jpg');
+  background-image: url('../Assets/5.jpg');
   background-size: cover;
   border-radius: 0.5rem;
   display: grid;

@@ -8,6 +8,7 @@
   --accent: #e28f92;
   --white: #f0f7f4;
   --text: #504746;
+  --black: #141414;
   --mobileWidth: clamp(8rem, calc(88% + 1rem), 45rem);
   /* Extra Extra Large: Title H1 in JumboTron */
   --textXXL: clamp(2rem, 13vw, 7rem);

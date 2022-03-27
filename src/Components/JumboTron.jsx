@@ -15,6 +15,7 @@ const JumboTron = (props) => {
         <NavBar
           aboutClick={props.aboutClick}
           sightsClick={props.sightsClick}
+          servicesClick={props.servicesClick}
           bookClick={props.bookClick}
         />
         <div className={classes['title-container']}>

@@ -2,9 +2,9 @@ import React from 'react';
 import SightCard from './Cards/SightCard';
 
 import classes from '../Styles/Sights.module.css';
-import Image1 from '../photos/6.jpg';
-import Image2 from '../photos/7.jpg';
-import Image3 from '../photos/8.jpg';
+import Image1 from '../Assets/sights1.jpg';
+import Image2 from '../Assets/sights2.jpg';
+import Image3 from '../Assets/sights3.jpg';
 
 // Add variable with Array that hold Object with SightCard Values. Test in seperate file
 
@@ -27,7 +27,7 @@ const Sights = () => {
       <SightCard
         Image={Image3}
         Title="Arc de Triomphe"
-        Desc="Honors those who fought and died for France in the French Revolutionary & Napoleonic Wars, with the names of all French victories and generals inscribed on it."
+        Desc="Honors those who fought for France in the French Revolutionary & Napoleonic Wars, by naming all French victories and their generals."
         className={classes['sight-three']}
       />
     </div>
