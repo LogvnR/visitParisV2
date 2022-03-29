@@ -21,12 +21,13 @@
   width: 55%;
   min-height: 330px;
   background-color: white;
+  color: var(--text);
 }
 
 .card-premium {
   width: 65%;
   min-height: 360px;
-  background-color: var(--main);
+  background: linear-gradient(147deg, #97c4b1, #529277);
   color: var(--white);
 }
 
@@ -34,8 +35,50 @@
   font-family: var(--fontThree);
   font-size: var(--textM);
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.7px;
   margin: 1em 0 0.5em;
+}
+
+.features {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price {
+  margin: 0;
+  font-family: var(--fontTwo);
+  font-size: clamp(26px, 9vw, 38px);
+  font-weight: 500;
+}
+
+.included {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.included p {
+  font-family: var(--fontThree);
+  font-size: var(--textM);
+  margin: 0;
+  padding: 0.7em 0 0.7em;
+  border-bottom: 2px solid var(--main);
+  text-align: center;
+}
+
+.included p:last-of-type {
+  border-bottom: 2px solid transparent;
+}
+
+.included-premium p {
+  border-bottom: 2px solid var(--white);
 }
 
 .btn {

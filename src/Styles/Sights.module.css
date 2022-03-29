@@ -6,16 +6,12 @@
   align-items: center;
 }
 
-.sight-one {
-  grid-area: Top;
-}
-
-.sight-two {
-  grid-area: Middle;
-}
-
-.sight-three {
-  grid-area: Bottom;
+.more p {
+  font-size: var(--textS);
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  margin: 0;
 }
 
 @media only screen and (min-width: 1024px) {

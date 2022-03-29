@@ -2,6 +2,7 @@ import React from 'react';
 import SightCard from './Cards/SightCard';
 
 import classes from '../Styles/Sights.module.css';
+import ScrollReveal from './Cards/ScrollReveal';
 import Image1 from '../Assets/sights1.jpg';
 import Image2 from '../Assets/sights2.jpg';
 import Image3 from '../Assets/sights3.jpg';
@@ -30,6 +31,9 @@ const Sights = () => {
         Desc="Honors those who fought for France in the French Revolutionary & Napoleonic Wars, by naming all French victories and their generals."
         className={classes['sight-three']}
       />
+      <ScrollReveal className={classes.more}>
+        <p>And More...</p>
+      </ScrollReveal>
     </div>
   );
 };
