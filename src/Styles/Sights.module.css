@@ -1,12 +1,8 @@
 .container {
   width: 100%;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas:
-    'Top'
-    'Middle'
-    'Bottom';
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
