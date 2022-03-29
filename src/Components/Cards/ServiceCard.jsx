@@ -8,14 +8,21 @@ import classes from './ServiceCard.module.css';
 const ServiceCard = (props) => {
   return (
     <ScrollReveal className={classes.container}>
-      <div className={classes.circle}>
-        <FontAwesomeIcon className={classes.icon} icon={props.iconOne} />
+      <img className={classes.picture} src={props.image} alt="" />
+      <div className={classes['icon-container']}>
+        <div className={classes.circle}>
+          <FontAwesomeIcon className={classes.icon} icon={props.iconOne} />
+        </div>
+        <div className={classes.divider}></div>
+        <div className={classes.circle}>
+          <FontAwesomeIcon className={classes.icon} icon={props.iconTwo} />
+        </div>
       </div>
-      <div className={classes.circle}>
-        <FontAwesomeIcon className={classes.icon} icon={props.iconTwo} />
+
+      <div className={classes.description}>
+        <p className={classes.title}>{props.title}</p>
+        <p className={classes.desc}>{props.desc}</p>
       </div>
-      <div className={classes.divider}></div>
-      <p className={classes.title}>{props.title}</p>
     </ScrollReveal>
   );
 };

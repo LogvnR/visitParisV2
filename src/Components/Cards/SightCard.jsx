@@ -11,8 +11,8 @@ const SightCard = (props) => {
     <ScrollReveal className={`${classes.container} ${props.className}`}>
       <img className={classes.picture} src={props.Image} alt="" />
       <div className={classes.description}>
-        <h2>{props.Title}</h2>
-        <p>{props.Desc}</p>
+        <p className={classes.title}>{props.Title}</p>
+        <p className={classes.desc}>{props.Desc}</p>
       </div>
     </ScrollReveal>
   );

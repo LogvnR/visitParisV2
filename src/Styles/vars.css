@@ -11,15 +11,15 @@
   --black: #141414;
   --mobileWidth: clamp(8rem, calc(88% + 1rem), 45rem);
   /* Extra Extra Large: Title H1 in JumboTron */
-  --textXXL: clamp(2rem, 13vw, 7rem);
+  --textXXL: clamp(42px, 13vw, 100px);
   /* Extra Large: Section Headers */
-  --textXL: clamp(0.9rem, 6.8vw, 2.4rem);
+  --textXL: clamp(20px, 6.8vw, 38.5px);
   /* Large: Title, JumboTron Sub-Title */
-  --textL: clamp(0.9rem, 5vw, 1.4rem);
+  --textL: clamp(14px, 5vw, 25px);
   /* Medium: JumboTron Button, Sight Card Titles*/
-  --textM: clamp(0.7rem, 4vw, 1.3rem);
+  --textM: clamp(12px, 4vw, 20px);
   /* Small: */
-  --textS: clamp(0.5rem, 3vw, 1.1rem);
+  --textS: clamp(8px, 3vw, 17.5px);
   /* Extra Small: */
   --textXS: clamp(0.4rem, 2.5vw, 0.9rem);
   /* ========== Desktop ========== */
