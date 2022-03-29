@@ -8,6 +8,7 @@ import Sights from './Components/Sights';
 import BookNow from './Components/BookNow';
 import Footer from './Components/Footer';
 import Services from './Components/Services';
+import Pricing from './Components/Pricing';
 
 function App() {
   const aboutRef = useRef(null);
@@ -18,6 +19,9 @@ function App() {
 
   const servicesRef = useRef(null);
   const executeServicesScroll = () => servicesRef.current.scrollIntoView();
+
+  const pricingRef = useRef(null);
+  const executePricingScroll = () => pricingRef.current.scrollIntoView();
 
   const bookRef = useRef(null);
   const executeBookScroll = () => bookRef.current.scrollIntoView();
@@ -48,6 +52,12 @@ function App() {
         </h2>
       </ScrollReveal>
       <Services />
+      <ScrollReveal className={classes['text-container']}>
+        <h2 ref={pricingRef} className={classes.title}>
+          Pricing
+        </h2>
+      </ScrollReveal>
+      <Pricing />
       <BookNow refProp={bookRef} />
       <Footer />
       <ScrollReveal className={classes.watermark}>
