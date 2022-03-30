@@ -49,11 +49,6 @@ const Pricing = () => {
           select
         </button>
       </ScrollReveal>
-      <ScrollReveal>
-        <p className={classes['price-warning']}>
-          all pricing subject to change
-        </p>
-      </ScrollReveal>
     </div>
   );
 };

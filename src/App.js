@@ -32,6 +32,7 @@ function App() {
         aboutClick={executeAboutScroll}
         sightsClick={executeSightsScroll}
         servicesClick={executeServicesScroll}
+        pricingClick={executePricingScroll}
         bookClick={executeBookScroll}
       />
       <ScrollReveal className={classes['text-container']}>
@@ -46,6 +47,9 @@ function App() {
         </h2>
       </ScrollReveal>
       <Sights />
+      <ScrollReveal className={classes.message}>
+        <p>And More...</p>
+      </ScrollReveal>
       <ScrollReveal className={classes['text-container']}>
         <h2 ref={servicesRef} className={classes.title}>
           How We Help
@@ -58,6 +62,9 @@ function App() {
         </h2>
       </ScrollReveal>
       <Pricing />
+      <ScrollReveal>
+        <p className={classes.message}>all pricing subject to change</p>
+      </ScrollReveal>
       <BookNow refProp={bookRef} />
       <Footer />
       <ScrollReveal className={classes.watermark}>

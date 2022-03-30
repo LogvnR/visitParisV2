@@ -10,6 +10,9 @@ import BookModal from './Modals/BookModal';
 
 const BookNow = (props) => {
   const [modalOpen, setModalOpen] = useState(false);
+  const [fromDate, setFromDate] = useState(false);
+  const [toDate, setToDate] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   const handleClickBtn = () => {
     setModalOpen(true);
@@ -24,6 +27,20 @@ const BookNow = (props) => {
   const closeModal = () => {
     setModalOpen(false);
   };
+
+  const fromInputHandler = () => {
+    setFromDate(true);
+  };
+
+  const toInputHandler = () => {
+    setToDate(true);
+  };
+
+  useEffect(() => {
+    if (fromDate && toDate === true) {
+      setIsActive(true);
+    }
+  }, [fromDate, toDate]);
 
   return (
     <div ref={props.refProp} className={classes.container}>
@@ -42,6 +59,7 @@ const BookNow = (props) => {
               className={classes['from-input']}
               type="date"
               placeholder="Start"
+              onChange={fromInputHandler}
             />
           </div>
 
@@ -51,9 +69,16 @@ const BookNow = (props) => {
               className={classes['from-input']}
               type="date"
               placeholder="End"
+              onChange={toInputHandler}
             />
           </div>
-          <button className={classes.btn} onClick={handleClickBtn}>
+          <button
+            disabled={!isActive}
+            className={
+              isActive ? `${classes.btn} ${classes.active}` : classes.btn
+            }
+            onClick={handleClickBtn}
+          >
             <FontAwesomeIcon icon={faArrowRight} />
           </button>
         </Card>

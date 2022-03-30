@@ -40,6 +40,7 @@ const NavBar = (props) => {
         <div onClick={props.aboutClick}>About Us</div>
         <div onClick={props.sightsClick}>See The Sights</div>
         <div onClick={props.servicesClick}>Services</div>
+        <div onClick={props.pricingClick}>Pricing</div>
         <div onClick={props.bookClick}>Book Now!</div>
       </div>
       <div className={classes.hamburger}>
@@ -57,6 +58,7 @@ const NavBar = (props) => {
             aboutClick={props.aboutClick}
             sightsClick={props.sightsClick}
             servicesClick={props.servicesClick}
+            pricingClick={props.pricingClick}
             bookClick={props.bookClick}
             close={closeModal}
           />

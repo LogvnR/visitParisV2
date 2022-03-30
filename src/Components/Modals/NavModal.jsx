@@ -20,6 +20,11 @@ const NavModal = (props) => {
     props.servicesClick();
   };
 
+  const pricingClickHandler = () => {
+    props.close();
+    props.pricingClick();
+  };
+
   const bookClickHandler = () => {
     props.close();
     props.bookClick();
@@ -36,6 +41,9 @@ const NavModal = (props) => {
           </section>
           <section onClick={servicesClickHandler}>
             <h2>Services</h2>
+          </section>
+          <section onClick={pricingClickHandler}>
+            <h2>Pricing</h2>
           </section>
           <section onClick={bookClickHandler}>
             <h2>Book Now!</h2>

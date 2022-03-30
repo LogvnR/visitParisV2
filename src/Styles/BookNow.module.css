@@ -61,6 +61,7 @@
 
 .input-container input {
   width: 25vw;
+  max-width: 190px;
   border: 1px solid var(--text);
   border-radius: 0.2rem;
   padding: 0.4em 0.2em;
@@ -101,7 +102,7 @@
   }
 
   .book-now {
-    width: var(--desktopWidthL);
+    width: clamp(8rem, 59% + 1rem, 75rem);
     height: 89vh;
     background-size: 100% 115%;
   }
@@ -112,19 +113,10 @@
 
   .date-container {
     width: 75%;
-    height: 50%;
     transform: none;
     margin-bottom: 2rem;
-  }
-
-  .date-container input {
-    width: 18.5vw;
-    height: 3.2vh;
-    font-size: 1vw;
-  }
-
-  .date-container button {
-    width: 8.2vw;
-    height: 3.55vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    gap: 1rem;
   }
 }

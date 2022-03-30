@@ -16,6 +16,15 @@
   border-bottom: 2px solid var(--accent);
 }
 
+.message {
+  font-size: var(--textS);
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  margin: 0 0 2rem;
+  text-align: center;
+}
+
 .watermark {
   height: 1.8vh;
   width: 100%;
@@ -35,6 +44,10 @@
 
   .text-container:nth-of-type(1) {
     margin-top: 10vh;
+  }
+
+  .message {
+    margin: 0 0 5rem;
   }
 
   .watermark p {

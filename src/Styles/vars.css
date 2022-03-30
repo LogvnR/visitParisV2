@@ -19,7 +19,7 @@
   /* Medium: JumboTron Button, Sight Card Titles*/
   --textM: clamp(12px, 4vw, 20px);
   /* Small: */
-  --textS: clamp(8px, 3vw, 17.5px);
+  --textS: clamp(8px, 3vw, 15px);
   /* Extra Small: */
   --textXS: clamp(0.4rem, 2.5vw, 0.9rem);
   /* ========== Desktop ========== */

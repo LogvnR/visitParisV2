@@ -110,3 +110,12 @@
   letter-spacing: 0.25px;
   margin: 0;
 }
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 3rem;
+  }
+}

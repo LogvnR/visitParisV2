@@ -8,20 +8,18 @@
 
 .jumbotron-card {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-image: url('../Assets/3.jpg');
   background-size: cover;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 0;
-  grid-template-rows: 0.2fr 1fr 0.4fr;
-  grid-template-areas:
-    'Top'
-    'Middle'
-    'Bottom';
 }
 
 .title-container {
-  grid-area: Middle;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,6 +62,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .cta-container p {
@@ -100,11 +99,12 @@
 
 @media only screen and (min-width: 1024px) {
   .jumbotron {
-    height: 89vh;
+    margin-bottom: 1rem;
   }
+
   .jumbotron-card {
-    width: var(--desktopWidthL);
+    width: 100%;
     background-image: url('../Assets/1.jpg');
-    background-size: 100% 125%;
+    /* flex-direction: column-reverse; */
   }
 }

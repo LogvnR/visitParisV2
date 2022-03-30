@@ -31,9 +31,6 @@ const Sights = () => {
         Desc="Honors those who fought for France in the French Revolutionary & Napoleonic Wars, by naming all French victories and their generals."
         className={classes['sight-three']}
       />
-      <ScrollReveal className={classes.more}>
-        <p>And More...</p>
-      </ScrollReveal>
     </div>
   );
 };

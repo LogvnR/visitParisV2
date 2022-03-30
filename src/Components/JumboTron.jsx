@@ -16,6 +16,7 @@ const JumboTron = (props) => {
           aboutClick={props.aboutClick}
           sightsClick={props.sightsClick}
           servicesClick={props.servicesClick}
+          pricingClick={props.pricingClick}
           bookClick={props.bookClick}
         />
         <div className={classes['title-container']}>

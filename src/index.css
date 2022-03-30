@@ -12,9 +12,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f0f7f4;
+  background-image: url('./Assets/SprinkleSm.svg');
+  background-repeat: repeat-y;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-image: url('./Assets/SprinkleLg.svg');
+  }
 }

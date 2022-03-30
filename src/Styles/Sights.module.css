@@ -6,21 +6,11 @@
   align-items: center;
 }
 
-.more p {
-  font-size: var(--textS);
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: 0.25px;
-  margin: 0;
-}
-
 @media only screen and (min-width: 1024px) {
   .container {
-    margin-top: 3vh;
-    grid-template-rows: none;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 'Top Middle Bottom';
-    height: 89vh;
-    align-items: center;
+    width: 90%;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0 auto;
   }
 }
