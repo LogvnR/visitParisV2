@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 import classes from '../Styles/BookNow.module.css';
 import ScrollReveal from './Cards/ScrollReveal';
 import Card from './Cards/Card';
@@ -33,14 +36,25 @@ const BookNow = (props) => {
           </h2>
         </div>
         <Card className={classes['date-container']}>
-          <input
-            className={classes['from-input']}
-            type="date"
-            placeholder="Start"
-          />
-          <input className={classes['to-input']} type="date" />
-          <button className={classes['submit-btn']} onClick={handleClickBtn}>
-            Search
+          <div className={classes['input-container']}>
+            <p>from:</p>
+            <input
+              className={classes['from-input']}
+              type="date"
+              placeholder="Start"
+            />
+          </div>
+
+          <div className={classes['input-container']}>
+            <p>to:</p>
+            <input
+              className={classes['from-input']}
+              type="date"
+              placeholder="End"
+            />
+          </div>
+          <button className={classes.btn} onClick={handleClickBtn}>
+            <FontAwesomeIcon icon={faArrowRight} />
           </button>
         </Card>
       </ScrollReveal>

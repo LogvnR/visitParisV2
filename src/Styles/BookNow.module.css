@@ -12,18 +12,14 @@
   background-image: url('../Assets/5.jpg');
   background-size: cover;
   border-radius: 0.5rem;
-  display: grid;
-  grid-template-rows: 0.9fr 0.7fr 0.7fr;
-  grid-template-areas:
-    'Top'
-    'Middle'
-    'Bottom';
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title-container {
-  grid-area: Top;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -39,11 +35,8 @@
 }
 
 .date-container {
-  grid-area: Bottom;
-  justify-self: center;
-  align-self: end;
   width: 90%;
-  height: 90%;
+  padding: 1rem 0;
   background-color: var(--white);
   display: flex;
   justify-content: space-evenly;
@@ -51,31 +44,55 @@
   transform: translateY(30px);
 }
 
-.date-container input {
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: var(--fontThree);
+}
+
+.input-container p {
+  margin: 0 0 0.2em;
+  font-size: var(--textXS);
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.input-container input {
   width: 25vw;
-  height: 2.5vh;
   border: 1px solid var(--text);
-  border-radius: 0.5rem;
-  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.2rem;
+  padding: 0.4em 0.2em;
+  background-color: transparent;
   color: var(--text);
   font-family: var(--fontThree);
-  font-size: 2vw;
+  font-size: var(--textXS);
   outline-color: var(--main);
 }
 
-.date-container button {
-  width: 15vw;
-  height: 2.8vh;
+.input-container input[type='date']::-webkit-calendar-picker-indicator {
+  width: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  width: clamp(35px, 12vw, 60px);
+  min-height: 39px;
+  padding: 0.8em 0;
   border: none;
-  background-color: var(--accent);
-  border-radius: 0.5rem;
+  background-color: rgb(173, 172, 172);
+  box-sizing: border-box;
+  border-radius: 0.2rem;
   color: var(--white);
-  font-family: var(--fontThree);
-  font-weight: 500;
-  font-size: var(--textXS);
-  letter-spacing: 0.025rem;
-  padding-bottom: 0.1rem;
-  text-transform: uppercase;
+  font-size: var(--textM);
+  transition: background-color 0.25s ease-in-out;
+}
+
+.active {
+  background-color: var(--accent);
+  transition: background-color 0.25s ease-in-out;
 }
 
 @media only screen and (min-width: 1024px) {
