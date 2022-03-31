@@ -26,3 +26,19 @@
   --desktopWidthL: clamp(8rem, calc(84% + 1rem), 110rem);
   --desktopTextM: clamp(0.9rem, 2.2vw, 2.8rem);
 }
+
+@media only screen and (min-width: 1500px) {
+  :root {
+    --textXXL: clamp(42px, 13vw, 130px);
+    /* Extra Large: Section Headers */
+    --textXL: clamp(20px, 6.8vw, 42px);
+    /* Large: Title, JumboTron Sub-Title */
+    --textL: clamp(14px, 5vw, 30px);
+    /* Medium: JumboTron Button, Sight Card Titles*/
+    --textM: clamp(12px, 4vw, 25px);
+    /* Small: */
+    --textS: clamp(8px, 3vw, 20px);
+    /* Extra Small: */
+    --textXS: clamp(0.4rem, 2.5vw, 0.9rem);
+  }
+}

@@ -1,141 +1,102 @@
-.modalContainer {
+.container {
   position: fixed;
-
   top: 0;
-
   bottom: 0;
-
   left: 0;
-
   right: 0;
-
-  background-color: rgba(0, 0, 0, 0.6);
-
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
   z-index: 10;
 }
 
 .modal {
-  width: clamp(6rem, 76vw, 41rem);
-  height: clamp(10rem, 30vh, 22rem);
+  width: 88%;
+  max-width: 500px;
+  box-sizing: border-box;
   background-color: var(--main);
-
   padding: 2rem;
-
-  border-radius: 20px;
-
+  border-radius: 0.2rem;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-
-  overflow: scroll;
 }
 
 .modal_header {
-  position: relative;
-
   width: 100%;
-
   display: flex;
-
   justify-content: center;
 }
 
 .modal_header h2 {
   text-align: center;
-
   width: 70%;
-
   color: var(--white);
-
   font-family: var(--fontTwo);
   font-size: var(--textXXL);
   text-transform: uppercase;
-
   font-weight: 400;
-
   margin: 0;
-
   padding-bottom: 0.2rem;
-
   border-bottom: 2px solid var(--accent);
 }
 
 .modal_content {
-  padding: 1rem 0;
-
+  width: 100%;
+  margin: 2rem auto 0;
+  max-width: 400px;
   color: white;
-
   font-family: var(--fontThree);
-
   text-align: center;
-
   font-size: var(--textS);
-
   letter-spacing: 0.8px;
-
   line-height: 1.2rem;
-
+  text-align: center;
   font-weight: 400;
-
-  overflow: scroll;
 }
 
 .Footer {
-  padding: 0.8rem 0;
-
-  padding-bottom: 0;
-
+  margin: 3rem 0 0;
   display: flex;
-
   justify-content: center;
-
   align-items: center;
 }
 
 .Footer button {
-  width: 5rem;
-
-  height: 1.6rem;
-
-  border: none;
-
-  background-color: var(--accent);
-
-  border-radius: 0.5rem;
-
-  color: white;
+  padding: 0.7em 2.5em;
+  background-color: transparent;
+  border: 2px solid var(--accent);
+  border-radius: 0.2rem;
+  color: var(--white);
   letter-spacing: 1px;
   font-size: var(--textS);
   text-transform: uppercase;
   font-family: var(--fontThree);
+  transition: all 0.25s ease-in-out;
 }
 
 @media only screen and (min-width: 1024px) {
-  .modal {
-    width: clamp(6rem, 45vw, 48rem);
-    height: clamp(10rem, 45vh, 25rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  .modal_header h2 {
+    font-size: clamp(0.9rem, 4.5vw, 4rem);
   }
 
-  .modal_header h2 {
-    font-size: clamp(0.9rem, 3vw, 4rem);
+  .Footer button:hover {
+    background-color: var(--accent);
+    border: 2px solid transparent;
+    transition: all 0.25s ease-in-out;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .modal {
+    max-width: 700px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .modal_content {
-    font-size: clamp(0.9rem, 1.3vw, 4rem);
-    line-height: 2.2rem;
-    width: 50%;
-    align-self: center;
-  }
-
-  .Footer button {
-    width: 7rem;
-    height: 2rem;
+    max-width: 550px;
   }
 }

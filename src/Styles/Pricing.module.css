@@ -46,7 +46,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .price {
@@ -65,8 +65,9 @@
 }
 
 .included p {
+  width: 90%;
   font-family: var(--fontThree);
-  font-size: var(--textM);
+  font-size: calc(var(--textM) - 1px);
   margin: 0;
   padding: 0.7em 0 0.7em;
   border-bottom: 2px solid var(--main);
@@ -96,11 +97,13 @@
 .btn-basic {
   border: 2px solid var(--text);
   color: var(--text);
+  transition: all 0.25s ease-in-out;
 }
 
 .btn-premium {
   border: 2px solid var(--white);
   color: var(--white);
+  transition: all 0.25s ease-in-out;
 }
 
 .price-warning {
@@ -113,9 +116,45 @@
 
 @media only screen and (min-width: 1024px) {
   .container {
-    width: 90%;
-    margin: 0 auto;
+    width: 73%;
     flex-direction: row;
-    gap: 3rem;
+    gap: 8rem;
+    margin: 0 auto;
+  }
+
+  .card-basic {
+    min-height: 385px;
+  }
+
+  .card-premium {
+    min-height: 450px;
+  }
+
+  .included p {
+    font-size: calc(var(--textM) - 4.5px);
+  }
+
+  .btn-basic:hover {
+    border: 2px solid var(--main);
+    background-color: var(--main);
+    color: var(--white);
+    transition: all 0.25s ease-in-out;
+  }
+
+  .btn-premium:hover {
+    border: 2px solid var(--white);
+    background-color: var(--white);
+    color: var(--main);
+    transition: all 0.25s ease-in-out;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .card-basic {
+    min-height: 470px;
+  }
+
+  .card-premium {
+    min-height: 570px;
   }
 }

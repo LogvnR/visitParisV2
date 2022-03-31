@@ -108,3 +108,9 @@
     /* flex-direction: column-reverse; */
   }
 }
+
+@media only screen and (min-width: 1500px) {
+  .arrow {
+    font-size: clamp(18px, 7vw, 32px);
+  }
+}

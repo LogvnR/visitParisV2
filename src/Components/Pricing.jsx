@@ -11,9 +11,9 @@ const Pricing = () => {
         <div className={classes.features}>
           <p className={classes.price}>$2,299</p>
           <div className={classes.included}>
-            <p>Feature 1</p>
-            <p>Feature 2</p>
-            <p>Feature 3</p>
+            <p>Authentic Cuisine</p>
+            <p>Eiffel Tower Tour</p>
+            <p>Private Chauffeur</p>
           </div>
         </div>
         <button className={`${classes.btn} ${classes['btn-basic']}`}>
@@ -25,10 +25,10 @@ const Pricing = () => {
         <div className={classes.features}>
           <p className={classes.price}>$3,999</p>
           <div className={`${classes.included} ${classes['included-premium']}`}>
-            <p>Feature 1</p>
-            <p>Feature 2</p>
-            <p>Feature 3</p>
-            <p>Feature 4</p>
+            <p>Base Features</p>
+            <p>Catacomb Tour</p>
+            <p>Private Seine River Ride</p>
+            <p>Helicopter City Tour</p>
           </div>
         </div>
         <button className={`${classes.btn} ${classes['btn-premium']}`}>
@@ -40,9 +40,9 @@ const Pricing = () => {
         <div className={classes.features}>
           <p className={classes.price}>$2,699</p>
           <div className={classes.included}>
-            <p>Feature 1</p>
-            <p>Feature 2</p>
-            <p>Feature 3</p>
+            <p>Base Features</p>
+            <p>Disneyland Paris</p>
+            <p>Circus Experience</p>
           </div>
         </div>
         <button className={`${classes.btn} ${classes['btn-basic']}`}>
