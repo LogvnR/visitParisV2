@@ -2,7 +2,7 @@ import React from 'react';
 import SightCard from './Cards/SightCard';
 
 import classes from '../Styles/Sights.module.css';
-import ScrollReveal from './Cards/ScrollReveal';
+
 import Image1 from '../Assets/sights1.jpg';
 import Image2 from '../Assets/sights2.jpg';
 import Image3 from '../Assets/sights3.jpg';
